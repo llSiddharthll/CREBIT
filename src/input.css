@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .main-text {
+      position: relative; /* Ensure the parent is relative */
+    }
+
+    .main-text::before {
+      content: 'GET NEW SOLUTION';
+      position: absolute;
+      top: 0;
+      left: 0; /* Adjust as needed */
+      font-size: 2rem; /* Adjust as needed */
+      display: inline-block; /* Add this line */
+      -webkit-background-clip: text; /* For Safari */
+      background-clip: text;
+      color: transparent;
+      background: linear-gradient(to right, #ec4899, #8b5cf6); /* Tailwind colors */
+      background-size: 100%; /* Ensure the gradient covers the area */
+      z-index: 0; /* Adjust z-index if necessary */
+    }
+
+    .stone {
+        z-index: -1;
+        background: radial-gradient(114.99% 94.16% at 72.92% 82.18%, #111111 47.39%, #091534 68.23%, #A24DD6 86.63%);
+        animation: bounce 5s infinite;
+    }
+    
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-1.5rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .coin {
+        animation: bounce 5s infinite;
+    }
+    
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-0.5rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+  }
+

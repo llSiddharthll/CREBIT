@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+      .font-outfit {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="relative font-outfit bg-[#010314] text-white">
+    <nav
+      class="flex flex-row justify-between items-center uppercase px-10 py-4 text-lg"
+    >
+      <ul class="flex">
+        <li class="flex items-center relative">
+          <img src="./images/logo1.png" alt="" class="h-24" />
+          <span class="relative -left-4 text-3xl"
+            >CRE<span class="text-sky-600">BIT</span>
+          </span>
+        </li>
+      </ul>
+      <ul class="flex items-center justify-center gap-14 tracking-widest">
+        <li>Home</li>
+        <li>Why Blockchain</li>
+        <li>Features</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+      <ul class="flex bg-white py-4 px-10 rounded-full text-black">
+        <li>Login</li>
+      </ul>
+    </nav>
+    <main>
+      <section class="relative flex flex-col justify-center px-40">
+        <div
+          class="absolute stone top-72 opacity-50 right-20 rounded-full shadow-md shadow-black h-96 w-96"
+        ></div>
+        <h3
+          class="relative top-14 text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+        >
+          CREBIT TOKEN
+        </h3>
+        <h1 class="text-[16rem] flex">
+          Intell
+          <span class="relative"
+            ><img
+              src="./images/coin.png"
+              alt=""
+              class="absolute top-20 h-20 w-20 object-cover coin"
+            /><span>i</span></span
+          >gence
+        </h1>
+        <div class="flex items-center gap-4 h-full">
+          <button
+            class="w-7/12 p-5 py-10 text-6xl bg-gradient-to-r from-pink-500 to-violet-500 rounded-3xl"
+          >
+            Technology for Business
+          </button>
+          <div class="w-5/12 h-full flex flex-col items-start px-10 gap-8">
+            <h4 class="text-lg text-gray-400">
+              We’ve worked with over 400 companies to build blockchain solutions
+              for their business, and we are still growing.
+            </h4>
+            <button class="flex bg-white py-4 px-10 rounded-full text-black">
+              Get Started Today
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
