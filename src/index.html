@@ -1,81 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="./output.css" rel="stylesheet" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-      .font-outfit {
-        font-family: "Outfit", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-      }
-    </style>
-  </head>
-  <body class="relative font-outfit bg-[#010314] text-white">
-    <nav
-      class="flex flex-row justify-between items-center uppercase px-10 py-4 text-lg"
-    >
-      <ul class="flex">
-        <li class="flex items-center relative">
-          <img src="./images/logo1.png" alt="" class="h-24" />
-          <span class="relative -left-4 text-3xl"
-            >CRE<span class="text-sky-600">BIT</span>
-          </span>
-        </li>
-      </ul>
-      <ul class="flex items-center justify-center gap-14 tracking-widest">
-        <li>Home</li>
-        <li>Why Blockchain</li>
-        <li>Features</li>
-        <li>Blog</li>
-        <li>Contact</li>
-      </ul>
-      <ul class="flex bg-white py-4 px-10 rounded-full text-black">
-        <li>Login</li>
-      </ul>
-    </nav>
-    <main>
-      <section class="relative flex flex-col justify-center px-40">
-        <div
-          class="absolute stone top-72 opacity-50 right-20 rounded-full shadow-md shadow-black h-96 w-96"
-        ></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+    .font-outfit {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body class="relative font-outfit overflow-x-hidden bg-[#010314] text-white">
+  <nav class="sticky top-0 bg-[#13141e] z-30 flex flex-row justify-between items-center uppercase px-20 py-4">
+    <ul class="flex">
+      <li class="flex items-center relative">
+        <img src="./images/logo1.png" alt="" class="h-16" />
+        <span class="relative -left-4 text-2xl">CRE<span class="text-sky-600">BIT</span>
+        </span>
+      </li>
+    </ul>
+    <ul class="flex text-sm items-center justify-center gap-14 tracking-widest">
+      <li>Home</li>
+      <li>Why Blockchain</li>
+      <li>Features</li>
+      <li>Blog</li>
+      <li>Contact</li>
+    </ul>
+    <ul class="flex bg-white py-3 px-10 rounded-full text-black">
+      <li>Login</li>
+    </ul>
+  </nav>
+  <main>
+    <section class="relative flex flex-col justify-center pl-20 pt-16">
+      <div class="absolute stone top-72 opacity-50 right-20 rounded-full shadow-md shadow-black h-96 w-96"></div>
+      <div class="purple-bg-gradient"></div>
+      <div class="green-bg-gradient"></div>
+      <h3 class="relative top-14 text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+        CREBIT TOKEN
+      </h3>
+      <h1 class="text-[14rem] flex">
+        Intell
+        <span class="relative"><img src="./images/coin.png" alt=""
+            class="absolute top-20 h-16 w-full object-cover coin" /><span>i</span></span>gence
+      </h1>
+      <div class="flex items-center gap-4 h-full">
+        <button class="w-6/12 px-1 py-10 text-6xl bg-gradient-to-r from-pink-500 to-violet-500 rounded-3xl">
+          Technology for Business
+        </button>
+        <div class="w-6/12 h-full flex flex-col items-start px-20 gap-8">
+          <h4 class="text-gray-400 font-light">
+            We’ve worked with over 400 companies to build blockchain <br />
+            solutions for their business, and we are still growing.
+          </h4>
+          <button class="flex bg-white py-4 px-10 rounded-full text-black">
+            Get Started Today
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-40 p-20 flex flex-col gap-14">
+      <div class="text-2xl text-center font-medium">
+        Backed By Leading Blockchain Investors And Founders
+      </div>
+      <div class="owl-carousel space-x-4 flex flex-row items-center justify-center">
+        <div class="logo-item">
+          <img class="h-12 opacity-50"
+            src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-22.svg" alt="Logo 1" />
+        </div>
+        <div class="logo-item">
+          <img class="h-12 opacity-50"
+            src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-24.svg" alt="Logo 2" />
+        </div>
+        <div class="logo-item">
+          <img class="h-12 opacity-50"
+            src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-23.svg" alt="Logo 3" />
+        </div>
+        <div class="logo-item">
+          <img class="h-12 opacity-50"
+            src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-24.svg" alt="Logo 4" />
+        </div>
+        <div class="logo-item">
+          <img class="h-12 opacity-50"
+            src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-23.svg" alt="Logo 5" />
+        </div>
+        <div class="logo-item">
+          <img class="h-12 opacity-50"
+            src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-22.svg" alt="Logo 6" />
+        </div>
+      </div>
+    </section>
+
+    <section class="relative flex flex-col gap-20">
+      <div class="w-full flex flex-col items-center gap-4">
         <h3
-          class="relative top-14 text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
-        >
+          class="relative -top-2 text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
           CREBIT TOKEN
         </h3>
-        <h1 class="text-[16rem] flex">
-          Intell
-          <span class="relative"
-            ><img
-              src="./images/coin.png"
-              alt=""
-              class="absolute top-20 h-20 w-20 object-cover coin"
-            /><span>i</span></span
-          >gence
-        </h1>
-        <div class="flex items-center gap-4 h-full">
-          <button
-            class="w-7/12 p-5 py-10 text-6xl bg-gradient-to-r from-pink-500 to-violet-500 rounded-3xl"
-          >
-            Technology for Business
-          </button>
-          <div class="w-5/12 h-full flex flex-col items-start px-10 gap-8">
-            <h4 class="text-lg text-gray-400">
-              We’ve worked with over 400 companies to build blockchain solutions
-              for their business, and we are still growing.
-            </h4>
-            <button class="flex bg-white py-4 px-10 rounded-full text-black">
-              Get Started Today
-            </button>
+        <h2 class="text-6xl">Why Blockchain?</h2>
+        <p class="text-gray-400 font-medium text-center">
+          We’ve worked with over 400 companies to build blockchain solutions
+          <br />
+          for their business, and we are still growing.
+        </p>
+      </div>
+      <div class="absolute -left-10 top-20 -z-10">
+        <img decoding="async" class="feature-shape2-1 alltuchtopdown"
+          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-shape-11.png" alt="" />
+        <img decoding="async" class="absolute left-40 feature-shape2-2 alltuchtopdown"
+          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-shape-12.png" alt="" />
+        <img decoding="async" class="absolute top-0 left-60 feature-shape2-3 leftToRight"
+          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-shape-13.png" alt="" />
+      </div>
+      <div class="absolute -top-14 left-2 -z-20">
+        <img fetchpriority="high" decoding="async" width="363" height="435"
+          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/cirlce-radius.png"
+          class="attachment-full size-full wp-image-974" alt="" srcset="
+              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/cirlce-radius.png         363w,
+              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/cirlce-radius-250x300.png 250w
+            " sizes="(max-width: 363px) 100vw, 363px" />
+      </div>
+
+      <div class="flex flex-row gap-10 h-screen w-full px-32">
+        <div class="left relative flex flex-col gap-10 h-full w-[45%] bg-[#13141e] rounded-3xl p-20">
+          <h3 class="text-5xl font-medium">Flexibility</h3>
+          <p class="text-gray-400 font-medium">
+            We’ve worked with over 400 companies to build blockchain solutions
+            for their business.
+          </p>
+          <ul class="list-disc flex flex-col gap-4">
+            <li>Blockchain solutions for their business.</li>
+            <li>Crypto space with its remarkable journey</li>
+            <li>Stay tuned to blockchain news</li>
+          </ul>
+          <div class="relative lg:-left-40 lg:-bottom-4 alltuchtopdown">
+            <img decoding="async" width="536" height="286"
+              src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-1.png"
+              class="attachment-full w-full wp-image-944" alt="" srcset="
+                  https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-1.png         536w,
+                  https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-1-300x160.png 300w
+                " sizes="" />
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+        <div class="right flex flex-col gap-10 h-full w-[55%]">
+          <div class="upper flex flex-col gap-10 justify-center p-20 pr-24 h-1/2 w-full bg-[#13141e] rounded-3xl">
+            <h3 class="text-5xl font-medium">Transference</h3>
+            <p class="text-gray-400 font-medium">
+              We’ve worked with over 400 companies to build blockchain
+              solutions for their business.
+            </p>
+            <p class="text-gray-400 font-medium">
+              We’ve worked with over 400 companies to build
+            </p>
+
+            <img class="absolute right-0" decoding="async" width="254" height="245"
+              src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-2.png"
+              class="attachment-full size-full wp-image-952" alt="" />
+          </div>
+          <div class="lower flex flex-col gap-10 justify-center p-20 pr-24 h-1/2 w-full bg-[#13141e] rounded-3xl">
+            <h3 class="text-5xl font-medium">Transference</h3>
+            <p class="text-gray-400 font-medium">
+              We’ve worked with over 400 companies to build blockchain
+              solutions for their business.
+            </p>
+            <p class="text-gray-400 font-medium">
+              We’ve worked with over 400 companies to build
+            </p>
+
+            <img class="absolute right-0" loading="lazy" decoding="async" width="300" height="298"
+              src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-3.png"
+              class="attachment-full size-full wp-image-953" alt="" srcset="
+                  https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-3.png         300w,
+                  https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-3-150x150.png 150w
+                " sizes="(max-width: 300px) 100vw, 300px" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex flex-row w-full items-center justify-center gap-10 relative p-20 my-40 bg-gradient-to-b from-[#7136B8] to-[#010314]">
+      <div class="relative w-1/2 flex justify-center">
+        <img class="absolute left-10 top-0 z-10" loading="lazy" decoding="async" width="445" height="362"
+          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-glaxy.png"
+          class="attachment-full size-full wp-image-983" alt="" srcset="
+              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-glaxy.png         445w,
+              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-glaxy-300x244.png 300w
+            " sizes="(max-width: 445px) 100vw, 445px" />
+        <img class="absolute left-40 bottom-0 z-10" loading="lazy" decoding="async" width="153" height="153"
+          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/vector.png"
+          class="attachment-full size-full wp-image-984" alt="" srcset="
+              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/vector.png         153w,
+              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/vector-150x150.png 150w
+            " sizes="(max-width: 153px) 100vw, 153px" />
+        <img class="relative z-20 h-96" loading="lazy" decoding="async"
+          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/intro_1-1.png"
+          class="attachment-full size-full wp-image-982" alt="" srcset="
+              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/intro_1-1.png         276w,
+              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/intro_1-1-241x300.png 241w
+            " />
+      </div>
+
+      <div class="w-1/2 flex flex-col gap-10">
+        <span class="text-lg">FEATURES</span>
+        <h3 class="text-6xl">
+          Blockchain spreads <br />
+          Trust everywhere
+        </h3>
+        <p class="text-[#ffffff90]">
+          Our team has created blockchain solutions for over 400 companies,
+          <br />
+          and we are still growing. From less paperwork and fewer disputes, to
+          <br />
+          happier customers and entirely new business methods, a shared record
+          of truth is invaluable.
+        </p>
+
+        <div class="flex gap-10">
+          <span class="flex flex-col gap-2">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#e5f8c6] to-[#61b998] text-7xl">63M</span>
+            <span>Blockchain users</span>
+          </span>
+          <span class="flex flex-col gap-2">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#e5f8c6] to-[#61b998] text-7xl">24%</span>
+            <span>Companies use blockchain</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full container mx-auto flex gap-20">
+      <div class="w-1/2 flex flex-col gap-5">
+        <h3 class="relative text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+          CREBIT TOKEN
+        </h3>
+        <h2 class="text-5xl">What does it mean for <br> Your business?</h2>
+        <p class="text-gray-400 font-medium">
+          We’ve worked with over 400 companies to build blockchain solutions
+          for their business, and we are still growing.
+        </p>
+      </div>
+      <div class="w-1/2 text-3xl flex items-center gap-20">
+        <div class="flex flex-col gap-10">
+          <span>Smart contracts </span>
+          <span>Paying employees</span>
+        </div>
+        <div class="flex flex-col gap-10">
+          <span>Cloud storage</span>
+          <span>Electronic voting</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+      items: 5,
+      loop: true,
+      margin: 30,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true
+    });
+  </script>
+</body>
+
 </html>

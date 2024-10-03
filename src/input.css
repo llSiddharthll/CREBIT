@@ -3,58 +3,143 @@
 @tailwind utilities;
 
 @layer components {
-    .main-text {
-      position: relative; /* Ensure the parent is relative */
-    }
-
-    .main-text::before {
-      content: 'GET NEW SOLUTION';
-      position: absolute;
-      top: 0;
-      left: 0; /* Adjust as needed */
-      font-size: 2rem; /* Adjust as needed */
-      display: inline-block; /* Add this line */
-      -webkit-background-clip: text; /* For Safari */
-      background-clip: text;
-      color: transparent;
-      background: linear-gradient(to right, #ec4899, #8b5cf6); /* Tailwind colors */
-      background-size: 100%; /* Ensure the gradient covers the area */
-      z-index: 0; /* Adjust z-index if necessary */
-    }
-
-    .stone {
-        z-index: -1;
-        background: radial-gradient(114.99% 94.16% at 72.92% 82.18%, #111111 47.39%, #091534 68.23%, #A24DD6 86.63%);
-        animation: bounce 5s infinite;
-    }
-    
-    @keyframes bounce {
-        0% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-1.5rem);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-
-    .coin {
-        animation: bounce 5s infinite;
-    }
-    
-    @keyframes bounce {
-        0% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-0.5rem);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-    
+  .main-text {
+    position: relative; /* Ensure the parent is relative */
   }
 
+  .main-text::before {
+    content: "GET NEW SOLUTION";
+    position: absolute;
+    top: 0;
+    left: 0; /* Adjust as needed */
+    font-size: 2rem; /* Adjust as needed */
+    display: inline-block; /* Add this line */
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    color: transparent;
+    background: linear-gradient(
+      to right,
+      #ec4899,
+      #8b5cf6
+    ); /* Tailwind colors */
+    background-size: 100%; /* Ensure the gradient covers the area */
+    z-index: 0; /* Adjust z-index if necessary */
+  }
+
+  .stone {
+    z-index: -1;
+    background: radial-gradient(
+      114.99% 94.16% at 72.92% 82.18%,
+      #111111 47.39%,
+      #091534 68.23%,
+      #a24dd6 86.63%
+    );
+    animation: bounce 5s infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1.5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .coin {
+    animation: bounce 4s infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .purple-bg-gradient {
+    width: 969px;
+    height: 722px;
+    position: absolute;
+    background: radial-gradient(
+      48.69% 39.15% at 50.02% 50.04%,
+      rgba(205, 34, 248, 0.5) 0.01%,
+      rgba(200, 9, 249, 0.3) 23.96%,
+      rgba(66, 0, 83, 0) 90%
+    );
+    top: 0;
+    right: 0;
+    transform: translateY(-35%) translateX(40%) rotate(40deg);
+    z-index: -1;
+  }
+
+  .green-bg-gradient {
+    width: 721px;
+    height: 539px;
+    position: absolute;
+    background: radial-gradient(
+      48.69% 39.15% at 50.02% 50.04%,
+      #53ffc1 0.01%,
+      rgba(25, 54, 99, 0.3) 53.96%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    top: 25%;
+    left: -448px;
+    transform: rotate(40deg);
+    opacity: 0.7;
+    z-index: -1;
+  }
+
+  .alltuchtopdown {
+    -webkit-animation-name: alltuchtopdown;
+    animation-name: alltuchtopdown;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+
+  .leftToRight {
+    -webkit-animation-name: leftToRight;
+    animation-name: leftToRight;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+
+  @keyframes leftToRight {
+    0% {
+      transform: rotateX(0deg) translateX(0px);
+    }
+    50% {
+      transform: rotateX(0deg) translateX(50px);
+    }
+    100% {
+      transform: rotateX(0deg) translateX(0px);
+    }
+  }
+  @keyframes alltuchtopdown {
+    0% {
+      transform: rotateX(0deg) translateY(0px);
+    }
+    50% {
+      transform: rotateX(0deg) translateY(-30px);
+    }
+    100% {
+      transform: rotateX(0deg) translateY(0px);
+    }
+  }
+}
