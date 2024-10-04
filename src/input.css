@@ -42,7 +42,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-1.5rem);
+      transform: translateY(-0.8rem);
     }
     100% {
       transform: translateY(0);
@@ -51,18 +51,6 @@
 
   .coin {
     animation: bounce 4s infinite;
-  }
-
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-1rem);
-    }
-    100% {
-      transform: translateY(0);
-    }
   }
 
   .purple-bg-gradient {
@@ -142,4 +130,50 @@
       transform: rotateX(0deg) translateY(0px);
     }
   }
+
+  #testimonial .owl-carousel .owl-item img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+
+  #testimonial{
+        background: radial-gradient(298.93% 263.81% at 149.5% 261.83%, #111111 47.39%, #091534 68.23%, rgba(162, 77, 214, 0.5) 86.63%);
+  }
+
+  .testimonial-wrap-3 .testimonial-wrap-circle1 {
+    position: absolute;
+    background: radial-gradient(120.5% 130.5% at -19.95% 33.74%, #190F2E 77.39%, #7D4087 114.59%);
+    width: 161px;
+    height: 161px;
+    border-radius: 50%;
+    right: -60px;
+    top: -80px;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.testimonial-wrap-3 .testimonial-wrap-circle2 {
+  position: absolute;
+  background: radial-gradient(139.08% 139.08% at 6.17% 127.08%, #130F1A 57.39%, #3B2A5E 112.32%, #8543B1 139.14%);
+  width: 158px;
+  height: 158px;
+  border-radius: 50%;
+  left: -90px;
+  top: 80px;
+  z-index: -1;
+  filter: blur(4px);
+}
+
+.testimonial-wrap-3 .testimonial-wrap-circle3 {
+  position: absolute;
+  background: radial-gradient(107.91% 147.91% at 140.21% 149.09%, #AB432C 0%, #460615 10.9%, #543871 156.63%);
+  filter: blur(6.66516px);
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  z-index: -1;
+  top: 250px;
+  right: 30px;
+}
 }

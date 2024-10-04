@@ -6,9 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link href="./output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <!-- Owl Carousel JS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
@@ -74,7 +86,7 @@
       <div class="text-2xl text-center font-medium">
         Backed By Leading Blockchain Investors And Founders
       </div>
-      <div class="owl-carousel space-x-4 flex flex-row items-center justify-center">
+      <div class="owl-carousel owl-logo-carousel space-x-4 flex flex-row items-center justify-center">
         <div class="logo-item">
           <img class="h-12 opacity-50"
             src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-22.svg" alt="Logo 1" />
@@ -261,20 +273,212 @@
         </div>
       </div>
     </section>
+
+    <section class="flex bg-gradient-to-b from-[#E5F8C6] to-[#61B998] h-[80vh] m-20 rounded-3xl p-20">
+      <div class="w-1/2 flex items-center justify-center"><img loading="lazy" decoding="async"
+          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img.png" class="alltuchtopdown"
+          alt=""
+          srcset="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img.png 461w, https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img-300x300.png 300w, https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img-150x150.png 150w, https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img-350x350.png 350w, https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img-460x460.png 460w"
+          sizes="(max-width: 461px) 100vw, 461px">
+      </div>
+      <div class="w-1/2 flex flex-col gap-10 p-0 items-start justify-center text-black">
+        <div class="flex flex-col gap-5">
+          <span class="text-lg font-medium">FEATURES</span>
+          <h3 class="text-6xl font-medium">
+            Blockchain spreads <br />
+            Trust everywhere
+          </h3>
+          <p class="font-light">
+            Our team has created blockchain solutions for over 400 companies,
+            <br />
+            and we are still growing. From less paperwork and fewer disputes, to
+            <br />
+            happier customers and entirely new business methods, a shared record
+            <br>
+            of truth is invaluable.
+          </p>
+        </div>
+        <div>
+          <button class="bg-white px-14 py-4 rounded-full font-medium flex items-center gap-5"><span>Get
+              Started</span><span
+              class="bg-gradient-to-b from-violet-500 to-pink-500 bg-clip-text text-transparent font-bold"><i
+                class="fa-solid fa-chevron-right"></i></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="text-center">
+        <h3 class="relative text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+          TESTIMONIAL
+        </h3>
+        <h2 class="text-5xl">Over 400 companies have already <br> Tried Blockchain</h2>
+
+      </div>
+
+      <div id="testimonial" class="relative text-white m-20 h-[75vh] rounded-3xl">
+        <div class="testimonial-wrap-3">
+          <div class="absolute testimonial-wrap-circle1 alltuchtopdown"></div>
+          <div class="absolute testimonial-wrap-circle2 leftToRight"></div>
+          <div class="absolute testimonial-wrap-circle3 leftToRight"></div>
+          <div class="absolute right-10 bottom-10 testimonial-wrap-bg alltuchtopdown">
+            <img decoding="async"
+              src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/testimonial-4-bg.png" alt="img">
+          </div>
+
+        </div>
+        <div class="p-20 owl-carousel owl-testimonial-carousel ">
+          <div class="item p-10 flex flex-col gap-5">
+            <div class="w-full flex justify-between items-center">
+              <div class="w-full flex items-center gap-5">
+                <img class="h-20 w-20 rounded-full object-cover"
+                  src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/testi_thumb3.png" alt="">
+                <div class="flex flex-col">
+                  <span>Robert Fox</span>
+                  <span>Director of content</span>
+                </div>
+              </div>
+              <div class="text-yellow-500 flex flex-row gap-2
+              ">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="text-3xl">
+              I've tested numerous technologies, but this one is leaps and bounds ahead of the competition. It's
+              phenomenal.
+            </div>
+          </div>
+          <div class="item p-10 flex flex-col gap-5">
+            <div class="w-full flex justify-between items-center">
+              <div class="w-full flex items-center gap-5">
+                <img class="h-20 w-20 rounded-full object-cover"
+                  src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/testi_thumb3.png" alt="">
+                <div class="flex flex-col">
+                  <span>Robert Fox</span>
+                  <span>Director of content</span>
+                </div>
+              </div>
+              <div class="text-yellow-500 flex flex-row gap-2
+              ">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="text-3xl">
+              I've tested numerous technologies, but this one is leaps and bounds ahead of the competition. It's
+              phenomenal.
+            </div>
+          </div>
+          <div class="item p-10 flex flex-col gap-5">
+            <div class="w-full flex justify-between items-center">
+              <div class="w-full flex items-center gap-5">
+                <img class="h-20 w-20 rounded-full object-cover"
+                  src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/testi_thumb3.png" alt="">
+                <div class="flex flex-col">
+                  <span>Robert Fox</span>
+                  <span>Director of content</span>
+                </div>
+              </div>
+              <div class="text-yellow-500 flex flex-row gap-2
+              ">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="text-3xl">
+              I've tested numerous technologies, but this one is leaps and bounds ahead of the competition. It's
+              phenomenal.
+            </div>
+          </div>
+          <div class="item p-10 flex flex-col gap-5">
+            <div class="w-full flex justify-between items-center">
+              <div class="w-full flex items-center justify-center gap-5">
+                <img class="h-20 w-20 rounded-full object-cover"
+                  src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/testi_thumb3.png" alt="">
+                <div class="flex flex-col">
+                  <span>Robert Fox</span>
+                  <span class="">Director of content</span>
+                </div>
+              </div>
+              <div class="text-yellow-500 flex flex-row gap-2
+              ">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="text-3xl">
+              I've tested numerous technologies, but this one is leaps and bounds ahead of the competition. It's
+              phenomenal.
+            </div>
+          </div>
+        </div>
+        <div class="owl-controls">
+          <div class="owl-nav">
+            <!-- Previous button -->
+            <a id="prev"
+              class="absolute owl-prev left-2 top-1/2 transform -translate-y-1/2 bg-white text-black px-3 py-2 rounded-full"><i
+                class="fa-solid fa-arrow-left"></i></a>
+
+            <!-- Next button -->
+            <a id="next"
+              class="absolute owl-next right-2 top-1/2 transform -translate-y-1/2 bg-white text-black px-3 py-2 rounded-full"><i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
-    var owl = $(".owl-carousel");
-    owl.owlCarousel({
-      items: 5,
-      loop: true,
-      margin: 30,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true
+    $(document).ready(function () {
+      // Initialize Owl Carousel for the first carousel (logo carousel)
+      var owl = $(".owl-logo-carousel");
+      owl.owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+      });
+
+      // Initialize Owl Carousel for the testimonial carousel
+      var owl2 = $('.owl-testimonial-carousel');
+      owl2.owlCarousel({
+        items: 2, // Number of items displayed
+        loop: true, // Infinite looping
+        margin: 30, // Space between items
+        nav: false, // Disable default navigation
+        dots: false, // Enable pagination dots
+        autoplay: true, // Auto play carousel
+        autoplayTimeout: 3000, // Delay for autoplay
+        autoplayHoverPause: true // Pause on hover
+      });
+
+      // Custom Prev button functionality for testimonial carousel
+      $('.owl-prev').click(function () {
+        owl2.trigger('prev.owl.carousel'); // Use Owl Carousel's prev method
+      });
+
+      // Custom Next button functionality for testimonial carousel
+      $('.owl-next').click(function () {
+        owl2.trigger('next.owl.carousel'); // Use Owl Carousel's next method
+      });
     });
+
   </script>
 </body>
 
