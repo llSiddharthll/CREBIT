@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "countup": "^1.8.2",
+    "countup.js": "^2.8.0"
   }
 }

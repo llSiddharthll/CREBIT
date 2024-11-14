@@ -35,80 +35,108 @@
 
 <body class="relative font-outfit overflow-x-hidden bg-[#010314] text-white">
   <nav id="navbar"
-    class="z-30 flex flex-row justify-between items-center uppercase px-20 py-4 transition-all duration-500 bg-transparent">
+    class="z-30 w-full flex flex-row justify-between items-center uppercase px-5 md:px-14 lg:px-20 py-4 transition-all duration-500 bg-transparent">
     <ul class="flex">
       <li class="flex items-center relative">
         <img src="./images/logo1.png" alt="" class="h-16" />
         <span class="relative -left-4 text-2xl">CRE<span class="text-sky-600">BIT</span></span>
       </li>
     </ul>
-    <ul class="flex text-sm items-center justify-center gap-14 tracking-widest">
+
+    <!-- Desktop Menu -->
+    <ul class="hidden lg:flex text-sm items-center justify-center gap-14 tracking-widest">
       <li>Home</li>
       <li>Why Blockchain</li>
       <li>Features</li>
       <li>Blog</li>
       <li>Contact</li>
     </ul>
+
+    <!-- Mobile Menu (Initially Hidden) -->
+    <ul id="mobile-menu"
+      class="lg:hidden z-30 flex flex-col items-center justify-center gap-4 absolute h-screen top-5 right-0 w-[20vw] bg-[#13141e] opacity-0 transition-all duration-500 ease-in-out transform translate-y-8">
+      <li>Home</li>
+      <li>Why Blockchain</li>
+      <li>Features</li>
+      <li>Blog</li>
+      <li>Contact</li>
+    </ul>
+
+    <!-- Login Button -->
     <ul class="hidden lg:flex bg-white py-3 px-10 rounded-full text-black">
       <li>Login</li>
     </ul>
+
+    <!-- Hamburger Button -->
+    <ul>
+      <li class="h-10 w-10 rounded-full bg-pink-400 justify-center items-center flex lg:hidden" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </li>
+    </ul>
   </nav>
 
-  <main>
-    <section class="relative flex flex-col justify-center pl-20 pt-16">
+  <main class="">
+    <section class="relative flex flex-col justify-center pl-10 md:pl-20 pt-16">
       <div class="absolute stone top-72 opacity-50 right-20 rounded-full shadow-md shadow-black h-96 w-96"></div>
-      <div class="purple-bg-gradient"></div>
+      <div class="hidden md:block">
+        <div class="purple-bg-gradient"></div>
+      </div>
       <div class="green-bg-gradient"></div>
       <h3
-        class="relative top-5 lg:top-14 text-xl lg:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+        class="relative top-0 md:top-5 lg:top-14 text-xl lg:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
         CREBIT TOKEN
       </h3>
-      <h1 class="text-[8rem] lg:text-[14rem] flex">
+      <h1 class="text-[3.5rem] md:text-[8rem] lg:text-[14rem] flex">
         Intell
         <span class="relative"><img src="./images/coin.png" alt=""
-            class="absolute top-12 lg:top-20 h-8 lg:h-16 w-full object-cover coin" /><span>i</span></span>gence
+            class="absolute top-5 md:top-12 lg:top-20 h-4 md:h-8 lg:h-16 w-full object-cover coin" /><span>i</span></span>gence
       </h1>
       <div class="flex flex-col lg:flex-row gap-4 h-full">
         <button
-          class="w-[60vw] lg:w-6/12 px-1 py-6 lg:py-10 text-5xl bg-gradient-to-r from-pink-500 to-violet-500 rounded-3xl">
-          Technology for Business
+          class="w-[50vw] md:w-[40vw] lg:w-[60vw] capitalize px-1 py-2 md:py-6 lg:py-10 text-xl md:text-3xl lg:text-5xl bg-gradient-to-r from-pink-500 to-violet-500 rounded-md md:rounded-3xl">
+          Ai Technology For Businesses
         </button>
-        <div class="w-full lg:w-6/12 h-full flex flex-col items-start lg:px-20 gap-8">
+        <div class="w-full lg:w-6/12 h-full flex flex-col items-start pe-10 lg:px-20 gap-8">
           <h4 class="text-gray-400 font-light">
-            We’ve worked with over 400 companies to build blockchain <br />
-            solutions for their business, and we are still growing.
+            We’ve partnered with over 400 companies to integrate Crebit token
+            into their blockchain solutions, enabling decentralized
+            transactions and fostering secure, transparent financial
+            ecosystems. And we are still growing.
           </h4>
-          <button class="flex bg-white py-4 px-10 rounded-full text-black">
-            Get Started Today
-          </button>
+          <div class="flex gap-4">
+            <button class="hero-btn">
+              Buy CBT
+            </button>
+            <button class="join-btn">
+              Join Now
+            </button>
+          </div>
+
         </div>
       </div>
     </section>
 
     <section class="py-40 p-20 flex flex-col gap-14">
-      <div class="text-2xl text-center font-medium">
-        Backed By Leading Blockchain Investors And Founders
+      <div class="text-md md:text-2xl text-center font-medium">
+        Crebit Token: Shaping the Future with Our Listing Partners
       </div>
       <div class="owl-carousel owl-logo-carousel space-x-4 flex flex-row items-center justify-center">
         <div class="logo-item">
-          <img class="h-12 opacity-50"
-            src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-22.svg" alt="Logo 1" />
+          <img class="h-12 object-cover" src="./images/i2.png" alt="Logo 1" />
         </div>
         <div class="logo-item">
-          <img class="h-12 opacity-50"
-            src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-24.svg" alt="Logo 2" />
+          <img class="h-12 object-cover" src="./images/i5.png" alt="Logo 2" />
         </div>
         <div class="logo-item">
           <img class="h-12 opacity-50"
             src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-23.svg" alt="Logo 3" />
         </div>
-        <div class="logo-item">
+        <!-- <div class="logo-item">
           <img class="h-12 opacity-50"
             src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-24.svg" alt="Logo 4" />
-        </div>
+        </div> -->
         <div class="logo-item">
-          <img class="h-12 opacity-50"
-            src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/client-23.svg" alt="Logo 5" />
+          <img class="h-12 object-cover" src="./images/i6.png" alt="Logo 5" />
         </div>
         <div class="logo-item">
           <img class="h-12 opacity-50"
@@ -117,565 +145,728 @@
       </div>
     </section>
 
-    <section class="relative flex flex-col gap-20">
+    <section class="relative flex flex-col gap-10 lg:gap-20 px-4 sm:px-8 md:px-16 lg:px-32">
       <div class="w-full flex flex-col items-center gap-4">
         <h3
-          class="relative -top-2 text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+          class="relative -top-2 text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
           CREBIT TOKEN
         </h3>
-        <h2 class="text-6xl">Why Blockchain?</h2>
-        <p class="text-gray-400 font-medium text-center">
-          We’ve worked with over 400 companies to build blockchain solutions
-          <br />
-          for their business, and we are still growing.
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl">Why Crebit Token?</h2>
+        <p class="text-gray-400 font-medium text-center text-sm sm:text-base lg:text-lg">
+          We’ve partnered with over 400 companies, integrating Crebit Token
+          into
+          <br class="hidden sm:block" />
+          their blockchain ecosystems, enabling secure, decentralized
+          financial transactions.
+          <br class="hidden sm:block" />
+          And we're just getting started.
         </p>
       </div>
+
       <div class="absolute -left-10 top-20 -z-10">
         <img decoding="async" class="feature-shape2-1 alltuchtopdown"
           src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-shape-11.png" alt="" />
-        <img decoding="async" class="absolute left-40 feature-shape2-2 alltuchtopdown"
+        <img decoding="async" class="absolute left-20 sm:left-40 feature-shape2-2 alltuchtopdown"
           src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-shape-12.png" alt="" />
-        <img decoding="async" class="absolute top-0 left-60 feature-shape2-3 leftToRight"
+        <img decoding="async" class="absolute top-0 left-40 sm:left-60 feature-shape2-3 leftToRight"
           src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-shape-13.png" alt="" />
       </div>
+
       <div class="absolute -top-14 left-2 -z-20">
         <img fetchpriority="high" decoding="async" width="363" height="435"
           src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/cirlce-radius.png"
-          class="attachment-full size-full wp-image-974" alt="" srcset="
-              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/cirlce-radius.png         363w,
-              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/cirlce-radius-250x300.png 250w
-            " sizes="(max-width: 363px) 100vw, 363px" />
+          class="attachment-full size-full wp-image-974" alt="" />
       </div>
 
-      <div class="flex flex-col lg:flex-row gap-10 lg:h-screen w-full px-32">
-        <div class="left relative flex flex-col gap-10 h-full lg:w-[45%] bg-[#13141e] rounded-3xl p-20">
-          <h3 class="text-5xl font-medium">Flexibility</h3>
-          <p class="text-gray-400 font-medium">
-            We’ve worked with over 400 companies to build blockchain solutions
-            for their business.
+      <div class="flex flex-col lg:flex-row gap-8 h-full w-full">
+        <div
+          class="left relative flex flex-col gap-8 md:gap-14 h-full lg:w-[45%] bg-[#13141e] rounded-3xl p-8 md:p-16 lg:p-20">
+          <h3 class="text-3xl sm:text-4xl lg:text-5xl font-medium">
+            Flexibility
+          </h3>
+          <p class="text-gray-400 font-medium text-sm sm:text-base lg:text-lg">
+            Crebit Token offers flexibility in financial transactions,
+            enabling seamless integration
+            <br class="hidden sm:block" />
+            with various business blockchain ecosystems.
           </p>
-          <ul class="list-disc flex flex-col gap-4">
-            <li>Blockchain solutions for their business.</li>
-            <li>Crypto space with its remarkable journey</li>
-            <li>Stay tuned to blockchain news</li>
+          <ul class="list-disc flex flex-col gap-4 text-sm sm:text-base">
+            <li>Enhances decentralized finance with smart contracts.</li>
+            <li>Adaptable for a wide range of industries and sectors.</li>
+            <li>Supports real-time token transfers with low fees.</li>
           </ul>
           <div class="relative lg:-left-40 lg:-bottom-4 alltuchtopdown">
             <img decoding="async" width="536" height="286"
               src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-1.png"
-              class="attachment-full w-full wp-image-944" alt="" srcset="
-                  https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-1.png         536w,
-                  https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-1-300x160.png 300w
-                " sizes="" />
+              class="attachment-full w-full wp-image-944" alt="" />
           </div>
         </div>
-        <div class="right flex flex-col gap-10 h-full lg:w-[55%]">
-          <div class="relative flex ">
-            <div
-              class="upper flex flex-col gap-10 justify-center px-40 lg:px-20 p-20 pr-24 h-1/2 w-full bg-[#13141e] rounded-3xl">
-              <h3 class="text-5xl font-medium">Transference</h3>
-              <p class="text-gray-400 font-medium">
-                We’ve worked with over 400 companies to build blockchain
-                solutions for their business.
+
+        <div class="right flex flex-col gap-8 md:gap-10 h-full lg:w-[55%]">
+          <div class="relative flex flex-col items-center md:flex-row w-full bg-[#13141e] rounded-3xl">
+            <div class="upper flex flex-col gap-6 md:gap-10 justify-center p-8 md:p-14 lg:px-20 md:w-5/6 rounded-3xl">
+              <h3 class="text-3xl sm:text-4xl lg:text-5xl font-medium">
+                Transference
+              </h3>
+              <p class="text-gray-400 font-medium text-sm sm:text-base lg:text-lg">
+                Crebit Token ensures fast, secure, and transparent
+                transference of assets,
+                <br class="hidden sm:block" />
+                enabling businesses to operate with greater efficiency.
               </p>
-              <p class="text-gray-400 font-medium">
-                We’ve worked with over 400 companies to build
+              <p class="text-gray-400 font-medium text-sm sm:text-base lg:text-lg">
+                Integrated with various payment gateways for ease of use.
               </p>
             </div>
-            <div>
-              <img class="absolute right-0" decoding="async" width="254" height="245"
+            <div class="md:w-1/6">
+              <img class="md:absolute -right-8 sm:-right-16 top-10" decoding="async" width="254" height="245"
                 src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-2.png"
                 class="attachment-full size-full wp-image-952" alt="" />
             </div>
           </div>
-          <div
-            class="lower flex flex-col gap-10 justify-center px-40 lg:px-20 p-20 pr-24 h-1/2 w-full bg-[#13141e] rounded-3xl">
-            <h3 class="text-5xl font-medium">Transference</h3>
-            <p class="text-gray-400 font-medium">
-              We’ve worked with over 400 companies to build blockchain
-              solutions for their business.
-            </p>
-            <p class="text-gray-400 font-medium">
-              We’ve worked with over 400 companies to build
-            </p>
 
-            <img class="absolute right-0" loading="lazy" decoding="async" width="300" height="298"
-              src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-3.png"
-              class="attachment-full size-full wp-image-953" alt="" srcset="
-                  https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-3.png         300w,
-                  https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-3-150x150.png 150w
-                " sizes="(max-width: 300px) 100vw, 300px" />
+          <div class="relative flex flex-col items-center md:flex-row w-full bg-[#13141e] rounded-3xl">
+            <div class="upper flex flex-col gap-6 md:gap-10 justify-center p-8 md:p-14 lg:px-20 md:w-5/6 rounded-3xl">
+              <h3 class="text-3xl sm:text-4xl lg:text-5xl font-medium">
+                Secure & Safe
+              </h3>
+              <p class="text-gray-400 font-medium text-sm sm:text-base lg:text-lg">
+                Security is paramount. Crebit Token leverages blockchain's
+                inherent security features
+                <br class="hidden sm:block" />
+                to provide tamper-proof transactions and ensure user data
+                privacy.
+              </p>
+              <p class="text-gray-400 font-medium text-sm sm:text-base lg:text-lg">
+                Trusted by 400+ companies for decentralized finance.
+              </p>
+            </div>
+            <div class="md:w-1/6">
+              <img class="md:absolute -right-8 sm:-right-16 top-10" decoding="async" width="254" height="245"
+                src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-card-thumb-3.png"
+                class="attachment-full size-full wp-image-952" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <section
-      class="flex flex-row w-full items-center justify-center gap-10 relative p-20 my-40 bg-gradient-to-b from-[#7136B8] to-[#010314]">
-      <div class="relative w-1/2 flex justify-center">
-        <img class="absolute left-10 top-0 z-10" loading="lazy" decoding="async" width="445" height="362"
-          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-glaxy.png"
-          class="attachment-full size-full wp-image-983" alt="" srcset="
+      class="flex flex-col lg:flex-row w-full items-center justify-center gap-10 relative p-10 lg:p-20 my-20 lg:my-40 bg-gradient-to-b from-[#7136B8] to-[#010314]">
+      <!-- Image Container -->
+      <div class="relative w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0">
+        <img
+          class="absolute left-4 lg:left-10 top-0 z-10 h-[20rem] md:h-[30rem] lg:h-[35rem] w-[20rem] md:w-[30rem] lg:w-[35rem] object-cover"
+          loading="lazy" decoding="async"
+          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-glaxy.png" alt="Feature Galaxy"
+          srcset="
               https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-glaxy.png         445w,
               https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/feature-glaxy-300x244.png 300w
             " sizes="(max-width: 445px) 100vw, 445px" />
-        <img class="absolute left-40 bottom-0 z-10" loading="lazy" decoding="async" width="153" height="153"
-          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/vector.png"
-          class="attachment-full size-full wp-image-984" alt="" srcset="
+
+        <img class="absolute left-20 md:left-32 lg:left-40 bottom-0 z-10 w-[100px] md:w-[120px] lg:w-[153px]"
+          loading="lazy" decoding="async"
+          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/vector.png" alt="Vector Image" srcset="
               https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/vector.png         153w,
               https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/vector-150x150.png 150w
             " sizes="(max-width: 153px) 100vw, 153px" />
-        <img class="relative z-20 h-96" loading="lazy" decoding="async"
-          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/intro_1-1.png"
-          class="attachment-full size-full wp-image-982" alt="" srcset="
-              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/intro_1-1.png         276w,
-              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/intro_1-1-241x300.png 241w
-            " />
+
+        <img loading="lazy" decoding="async" src="./images/i10.png"
+          class="relative z-20 h-[15rem] md:h-[25rem] lg:h-[30rem] rounded-3xl" alt="Token Image" />
       </div>
 
-      <div class="w-1/2 flex flex-col gap-10">
-        <span class="text-lg">FEATURES</span>
-        <h3 class="text-6xl">
-          Blockchain spreads <br />
-          Trust everywhere
+      <!-- Text Content -->
+      <div class="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-10 text-center lg:text-left">
+        <span class="text-4xl md:text-5xl lg:text-6xl font-bold">FEATURES</span>
+        <h3 class="text-3xl md:text-4xl font-semibold">
+          Crebit Token Spreads <br class="hidden lg:block" />
+          Trust Across Financial Networks
         </h3>
-        <p class="text-[#ffffff90]">
-          Our team has created blockchain solutions for over 400 companies,
-          <br />
-          and we are still growing. From less paperwork and fewer disputes, to
-          <br />
-          happier customers and entirely new business methods, a shared record
-          of truth is invaluable.
+        <p class="text-[#ffffff90] text-sm md:text-base lg:text-lg">
+          Our team has integrated Crebit Token solutions with over 400
+          companies,
+          <br class="hidden lg:block" />
+          and our network continues to grow. By streamlining financial
+          transactions,
+          <br class="hidden lg:block" />
+          reducing operational costs, and fostering trust, Crebit Token opens
+          <br class="hidden lg:block" />
+          doors to more secure, decentralized, and transparent business
+          ecosystems.
         </p>
 
-        <div class="flex gap-10">
-          <span class="flex flex-col gap-2">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#e5f8c6] to-[#61b998] text-7xl">63M</span>
-            <span>Blockchain users</span>
+        <!-- Statistics -->
+        <div class="flex flex-col md:flex-row gap-8 lg:gap-14 justify-center lg:justify-start">
+          <span class="flex flex-col gap-2 items-center md:items-start">
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-[#e5f8c6] to-[#61b998] text-5xl md:text-6xl lg:text-7xl">
+              <span id="token-user"></span>K
+            </span>
+            <span class="text-base lg:text-lg">Crebit Token users</span>
           </span>
-          <span class="flex flex-col gap-2">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#e5f8c6] to-[#61b998] text-7xl">24%</span>
-            <span>Companies use blockchain</span>
+          <span class="flex flex-col gap-2 items-center md:items-start">
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-[#e5f8c6] to-[#61b998] text-5xl md:text-6xl lg:text-7xl">
+              <span id="token-percent"></span>%
+            </span>
+            <span class="text-base lg:text-lg">Companies integrated with Crebit Token</span>
           </span>
         </div>
       </div>
     </section>
 
-    <section class="w-full container mx-auto flex gap-20">
-      <div class="w-1/2 flex flex-col gap-5">
-        <h3 class="relative text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+    <section class="w-full container mx-auto flex flex-col lg:flex-row gap-10 lg:gap-20 px-5 md:px-10">
+      <!-- Left Column -->
+      <div class="w-full lg:w-1/2 flex flex-col gap-3 md:gap-5">
+        <h3 class="text-lg md:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
           CREBIT TOKEN
         </h3>
-        <h2 class="text-5xl">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl">
           What does it mean for <br />
           Your business?
         </h2>
-        <p class="text-gray-400 font-medium">
+        <p class="text-gray-400 font-medium text-sm md:text-base">
           We’ve worked with over 400 companies to build blockchain solutions
           for their business, and we are still growing.
         </p>
       </div>
-      <div class="w-1/2 text-3xl flex items-center gap-20">
-        <div class="flex flex-col gap-10">
-          <span>Smart contracts </span>
+
+      <!-- Right Column with List of Applications -->
+      <div
+        class="w-full lg:w-1/2 text-lg md:text-2xl lg:text-3xl flex flex-row items-start md:items-center gap-5 md:gap-10 mb-10 md:mb-2">
+        <div class="flex flex-col gap-5 md:gap-10">
+          <span>Smart contracts</span>
           <span>Paying employees</span>
         </div>
-        <div class="flex flex-col gap-10">
+        <div class="flex flex-col gap-5 md:gap-10">
           <span>Cloud storage</span>
           <span>Electronic voting</span>
         </div>
       </div>
     </section>
 
-    <section class="flex bg-gradient-to-b from-[#E5F8C6] to-[#61B998] h-[80vh] m-20 rounded-3xl p-20">
-      <div class="w-1/2 flex items-center justify-center">
-        <img loading="lazy" decoding="async"
-          src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img.png" class="alltuchtopdown"
-          alt="" srcset="
-              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img.png         461w,
-              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img-300x300.png 300w,
-              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img-150x150.png 150w,
-              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img-350x350.png 350w,
-              https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/bitcoin-img-460x460.png 460w
-            " sizes="(max-width: 461px) 100vw, 461px" />
+    <section
+      class="flex flex-col lg:flex-row bg-gradient-to-b from-[#E5F8C6] to-[#61B998] h-auto lg:h-[80vh] m-5 md:m-10 lg:m-20 rounded-3xl p-8 md:p-16 lg:p-20">
+      <!-- Image Container -->
+      <div class="w-full lg:w-1/2 flex items-center justify-center mb-10 lg:mb-0">
+        <img loading="lazy" decoding="async" src="./images/coin.png"
+          class="alltuchtopdown max-w-[80%] md:max-w-[60%] lg:max-w-[80%]" alt="Bitcoin Image" />
       </div>
-      <div class="w-1/2 flex flex-col gap-10 p-0 items-start justify-center text-black">
-        <div class="flex flex-col gap-5">
-          <span class="text-lg font-medium">FEATURES</span>
-          <h3 class="text-6xl font-medium">
-            Blockchain spreads <br />
-            Trust everywhere
+
+      <!-- Text Content -->
+      <div
+        class="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-10 p-0 items-start justify-center text-black text-left md:text-center lg:text-left">
+        <div class="flex flex-col gap-3 md:gap-5">
+          <span class="text-base md:text-lg font-medium">FEATURES</span>
+          <h3 class="text-3xl md:text-5xl lg:text-6xl font-medium leading-tight">
+            Crebit provide <br class="hidden md:block" />
+            you best services
           </h3>
-          <p class="font-light">
-            Our team has created blockchain solutions for over 400 companies,
-            <br />
-            and we are still growing. From less paperwork and fewer disputes,
-            to
-            <br />
-            happier customers and entirely new business methods, a shared
-            record
-            <br />
-            of truth is invaluable.
+          <p class="font-light text-sm md:text-base lg:text-lg leading-relaxed">
+            Crebit is one of the most transformative technologies since the invention of the Internet.
+            <br class="hidden lg:block" />
+            Crebit stands firmly in support of financial freedom and the liberty that Crebit provides
+            <br class="hidden lg:block" />
+            globally for anyone to voluntarily participate in a
+
+            <br class="hidden lg:block" />
+            permissionless and decentralized network.
           </p>
         </div>
-        <div>
-          <button class="bg-white px-14 py-4 rounded-full font-medium flex items-center gap-5">
-            <span>Get Started</span><span
-              class="bg-gradient-to-b from-violet-500 to-pink-500 bg-clip-text text-transparent font-bold"><i
-                class="fa-solid fa-chevron-right"></i></span>
+
+        <!-- Button -->
+        <div class="flex justify-center lg:justify-start mt-4 lg:mt-6">
+          <button
+            class="bg-white px-8 md:px-10 lg:px-14 py-3 md:py-4 rounded-full font-medium flex items-center gap-3 md:gap-5">
+            <span>Get Started</span>
+            <span class="bg-gradient-to-b from-violet-500 to-pink-500 bg-clip-text text-transparent font-bold">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
           </button>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="text-center">
-        <h3 class="relative text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-          TESTIMONIAL
+      <!-- <div class="text-center">
+        <h3
+          class="relative text-md md:text-xl lg:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+          TESTIMONIALS
         </h3>
-        <h2 class="text-5xl">
-          Over 400 companies have already <br />
-          Tried Blockchain
+        <h2 class="text-xl md:text-2xl lg:text-5xl">
+          Hear What Our Clients Say About Us
         </h2>
-      </div>
+      </div> -->
 
-      <div id="testimonial" class="relative text-white m-20 h-[75vh] rounded-3xl">
-        <div class="testimonial-wrap-3">
-          <div class="absolute testimonial-wrap-circle1 alltuchtopdown"></div>
-          <div class="absolute testimonial-wrap-circle2 leftToRight"></div>
-          <div class="absolute testimonial-wrap-circle3 leftToRight"></div>
-          <div class="absolute right-10 bottom-10 testimonial-wrap-bg alltuchtopdown">
-            <img decoding="async"
-              src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/testimonial-4-bg.png" alt="img" />
-          </div>
-        </div>
-        <div class="p-20 owl-carousel owl-testimonial-carousel">
-          <div class="item p-10 flex flex-col gap-5">
-            <div class="w-full flex justify-between items-center">
-              <div class="w-full flex items-center gap-5">
-                <img class="h-20 w-20 rounded-full object-cover"
-                  src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/testi_thumb3.png" alt="" />
-                <div class="flex flex-col">
-                  <span>Robert Fox</span>
-                  <span>Director of content</span>
-                </div>
-              </div>
-              <div class="text-yellow-500 flex flex-row gap-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="text-3xl">
-              I've tested numerous technologies, but this one is leaps and
-              bounds ahead of the competition. It's phenomenal.
-            </div>
-          </div>
-          <div class="item p-10 flex flex-col gap-5">
-            <div class="w-full flex justify-between items-center">
-              <div class="w-full flex items-center gap-5">
-                <img class="h-20 w-20 rounded-full object-cover"
-                  src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/testi_thumb3.png" alt="" />
-                <div class="flex flex-col">
-                  <span>Robert Fox</span>
-                  <span>Director of content</span>
-                </div>
-              </div>
-              <div class="text-yellow-500 flex flex-row gap-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="text-3xl">
-              I've tested numerous technologies, but this one is leaps and
-              bounds ahead of the competition. It's phenomenal.
-            </div>
-          </div>
-          <div class="item p-10 flex flex-col gap-5">
-            <div class="w-full flex justify-between items-center">
-              <div class="w-full flex items-center gap-5">
-                <img class="h-20 w-20 rounded-full object-cover"
-                  src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/testi_thumb3.png" alt="" />
-                <div class="flex flex-col">
-                  <span>Robert Fox</span>
-                  <span>Director of content</span>
-                </div>
-              </div>
-              <div class="text-yellow-500 flex flex-row gap-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="text-3xl">
-              I've tested numerous technologies, but this one is leaps and
-              bounds ahead of the competition. It's phenomenal.
-            </div>
-          </div>
-          <div class="item p-10 flex flex-col gap-5">
-            <div class="w-full flex justify-between items-center">
-              <div class="w-full flex items-center justify-center gap-5">
-                <img class="h-20 w-20 rounded-full object-cover"
-                  src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/testi_thumb3.png" alt="" />
-                <div class="flex flex-col">
-                  <span>Robert Fox</span>
-                  <span class="">Director of content</span>
-                </div>
-              </div>
-              <div class="text-yellow-500 flex flex-row gap-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-            <div class="text-3xl">
-              I've tested numerous technologies, but this one is leaps and
-              bounds ahead of the competition. It's phenomenal.
-            </div>
-          </div>
-        </div>
-        <div class="owl-controls">
-          <div class="owl-nav">
-            <!-- Previous button -->
-            <a id="prev"
-              class="absolute owl-prev left-2 top-1/2 transform -translate-y-1/2 bg-white text-black px-3 py-2 rounded-full"><i
-                class="fa-solid fa-arrow-left"></i></a>
+      <div class="roadmap-sec pt-12" id="roadmap">
+        <div class="md:container mx-10 md:mx-auto relative">
+          <div class="circle-ripple absolute inset-0 rounded-full opacity-25"></div>
 
-            <!-- Next button -->
-            <a id="next"
-              class="absolute owl-next right-2 top-1/2 transform -translate-y-1/2 bg-white text-black px-3 py-2 rounded-full"><i
-                class="fa-solid fa-arrow-right"></i></a>
+          <!-- Title -->
+          <div class="text-center">
+            <h3 class="text-5xl font-semibold">The Roadmap</h3>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="bg-gradient-to-b from-[#7136B8] to-[#010314] p-20 py-40">
-      <div class="flex relative bg-cover bg-center h-full p-20 rounded-3xl" style="
-            background-image: url('https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/video_bg.webp');
-          ">
-        <div class="w-1/2 flex flex-col gap-10 p-0 items-start justify-center text-white">
-          <div class="flex flex-col gap-5">
-            <span class="text-lg font-medium">FEATURES</span>
-            <h3 class="text-6xl font-medium">
-              Blockchain spreads <br />
-              Trust everywhere
-            </h3>
+          <!-- Subtitle -->
+          <div class="text-center max-w-2xl mx-auto mt-4">
             <p class="font-light">
-              Our team has created blockchain solutions for over 400
-              companies,
-              <br />
-              and we are still growing. From less paperwork and fewer
-              disputes, to
-              <br />
-              happier customers and entirely new business methods, a shared
-              record
-              <br />
-              of truth is invaluable.
+              Onward and upward, productize the deliverables and focus on the bottom line drop-dead date translating our
+              vision of having a market leading platform drop-dead date.
             </p>
           </div>
-          <div>
-            <button class="bg-white px-14 py-4 rounded-full font-medium flex items-center gap-5 text-black">
-              <span>Get Started</span><span
-                class="bg-gradient-to-b from-violet-500 to-pink-500 bg-clip-text text-transparent font-bold"><i
-                  class="fa-solid fa-chevron-right"></i></span>
-            </button>
+
+          <div
+            class="absolute w-full h-[0.2rem] bg-gradient-to-r from-[#ffffff50] via-[#ffffff] to-[#ffffff50] top-[16rem] md:top-[12.9rem]">
           </div>
-        </div>
-        <div class="relative right flex items-center justify-center w-1/2">
-          <span
-            class="absolute flex items-center justify-center bg-pink-300 z-10 p-11 rounded-full animate-ping"></span>
-          <i
-            class="flex items-center justify-center bg-gradient-to-b from-pink-500 to-violet-500 p-10 rounded-full z-20">
-            <svg class="self-center" width="22" height="23" viewBox="0 0 22 23" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M1.66602 11.6553V7.50193C1.66602 2.34526 5.31768 0.233597 9.78602 2.81193L13.391 4.8886L16.996 6.96526C21.4643 9.5436 21.4643 13.7669 16.996 16.3453L13.391 18.4219L9.78602 20.4986C5.31768 23.0769 1.66602 20.9653 1.66602 15.8086V11.6553Z"
-                stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
-              </path>
-            </svg>
-          </i>
+
+          <!-- Roadmap Slider -->
+          <div class="roadmap-slider owl-carousel mt-8 w-full">
+            <!-- Second Phase Items -->
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">Second Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">4. Listing on Vindax</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">Second Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">5. Listing on CoinMarketCap</p>
+            </div>
+            <!-- Third Phase Items -->
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">Third Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">1. Launch our world-class crypto exchange</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">Third Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">2. Multi-dynamic platform for e-commerce for merchants and
+                buyers</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">Third Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">3. App launch for E-vehicle management</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">Third Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">4. Awareness App launch for real estate</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">Third Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">5. Decentralized personal wallet launch</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">Third Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">6. Gaming website launch</p>
+            </div>
+            <!-- First Phase Items -->
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">First Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">1. Launching Affiliate and awareness program</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">First Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">2. Deployment and Audit</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">First Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">3. Website and social media release</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">First Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">4. Launching marketing campaign</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">First Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">5. Training and contact with mass communication</p>
+            </div>
+            <!-- Additional Second Phase Items -->
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">Second Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">1. Listing on multiple exchanges</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">Second Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">2. App launch for mass training and awareness about
+                blockchain</p>
+            </div>
+            <div class="item flex flex-col items-center gap-5">
+              <span class="block font-bold text-purple-600">Second Phase</span>
+              <span class="relative w-10 h-10 bg-[#9333ea30] rounded-full z-10">
+                <span
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-[#9333ea] rounded-full z-20"></span>
+              </span>
+              <p class="font-light text-[15px] text-center">3. Tie-up with universities for advanced blockchain</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="flex flex-col gap-5 text-center">
+    <section class="flex flex-col items-center justify-center w-full gap-5 md:gap-10 py-20 md:p-20 md:py-40">
+      <div class="flex flex-col gap-3 md:gap-5 text-center">
         <h3
-          class="relative uppercase text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+          class="relative uppercase text-lg md:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+          Crebit Information
+        </h3>
+        <h2 class="text-3xl md:text-5xl">
+          Crebit token supply and <br />
+          <span class="text-purple-400">blockchain</span> information
+        </h2>
+      </div>
+      <div class=" flex w-full justify-around mt-5 md:mt-10 px-10">
+
+        <div class="md:w-1/2 z-20 flex flex-col gap-4">
+          <span class="text-3xl">Token Information</span>
+          <span class="w-40 h-[2px] -mt-2 bg-orange-500 rounded-md"></span>
+          <table class="text-sm md:text-2xl">
+            <tr class="border-[1px] border-white">
+              <td class="p-4">Token name</td>
+              <td class="p-4 ps-10 border-l-[1px] border-white">Crebit Token</td>
+            </tr>
+            <tr class="border-[1px] border-white">
+              <td class="p-4">Symbol</td>
+              <td class="p-4 ps-10 border-l-[1px] border-white">CBT</td>
+            </tr>
+            <tr class="border-[1px] border-white">
+              <td class="p-4">Max Supply</td>
+              <td class="p-4 ps-10 border-l-[1px] border-white">10,000,000 CBT</td>
+            </tr>
+
+            <tr class="border-[1px] border-white">
+              <td class="p-4">Decimals</td>
+              <td class="p-4 ps-10 border-l-[1px] border-white">18</td>
+            </tr>
+            <tr class="border-[1px] border-white">
+              <td class="p-4">Standard</td>
+              <td class="p-4 ps-10 border-l-[1px] border-white">BEP20</td>
+            </tr>
+            <tr class="border-[1px] border-white">
+              <td class="p-4">Network</td>
+              <td class="p-4 ps-10 border-l-[1px] border-white">Binance Smart Chain ( BSC )</td>
+            </tr>
+          </table>
+        </div>
+        <div class="relative hidden md:block top-40 loader">
+          <div class="box box0">
+            <div></div>
+          </div>
+          <div class="box box1">
+            <div></div>
+          </div>
+          <div class="box box2">
+            <div></div>
+          </div>
+          <div class="box box3">
+            <div></div>
+          </div>
+          <div class="box box4">
+            <div></div>
+          </div>
+          <div class="box box5">
+            <div></div>
+          </div>
+          <div class="box box6">
+            <div></div>
+          </div>
+          <div class="box box7">
+            <div></div>
+          </div>
+          <div class="ground">
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <a href="https://bscscan.com/token/0xA10292F4E6A943a9FDA9028C1B929F6672B6a9d9" class="special-btn">
+        <span class="text">BSC Scan View</span>
+      </a>
+    </section>
+
+    <section class="px-3 md:px-5 py-10 md:py-20 bg-gray-900 text-white">
+      <!-- Header Content -->
+      <div class="flex flex-col gap-3 md:gap-5 text-center">
+        <h3
+          class="relative uppercase text-lg md:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
           Frequently Asked Questions
         </h3>
-        <h2 class="text-5xl">
+        <h2 class="text-3xl md:text-5xl">
           Popular questions about <br />
-          Blockchain
+          Crebit Token
         </h2>
-        <p class="text-gray-400 font-medium">
-          We’ve worked with over 400 companies to build blockchain solutions
-          for their <br />
-          business, and we are still growing.
+        <p class="text-gray-400 font-medium text-sm md:text-base">
+          Learn more about the Crebit Token and how it’s transforming
+          transactions for businesses and users alike.
         </p>
       </div>
 
-      <div class="faq-container flex flex-col items-center justify-center px-40 gap-8 mt-10">
+      <!-- FAQ Section -->
+      <div class="faq-container flex flex-col items-center justify-center px-2 md:px-20 gap-4 md:gap-8 mt-5 md:mt-10">
+        <!-- FAQ Item 1 -->
         <div
-          class="faq-question flex flex-row transition-all ease-in-out duration-300 gap-5 items-center justify-center p-10 border-[1px] border-[#ffffff70] rounded-full w-full px-20 from-[#E5F8C6] to-[#61B998]">
-          <div class="flex items-start flex-1 flex-col gap-5">
-            <h2 class="text-2xl flex-1 font-medium">
-              What is blockchain technology?
+          class="faq-question flex flex-row gap-3 md:gap-5 items-center justify-between w-full p-5 md:px-20 md:py-10 border-[1px] border-[#ffffff70] rounded-3xl md:rounded-full cursor-pointer">
+          <div class="flex-1 flex flex-col gap-2 md:gap-5">
+            <h2 class="text-lg md:text-2xl font-medium">
+              What is the Crebit Token?
             </h2>
-            <p class="faq-answer hidden font-normal">
-              It's very simple! Register here. In your personal account,
-              create a wallet where you can store your FOX tokens. Then just
-              send any amount to the displayed address in your office.
+            <p class="faq-answer hidden font-normal text-gray-300 text-sm md:text-base">
+              Crebit is a blockchain-based token that enables seamless, secure
+              transactions across various industries. It’s designed to reduce
+              friction in digital payments while ensuring transparency and
+              security.
             </p>
           </div>
-          <i class="chevron-icon text-xl font-bold text-[#ffffff90] fa-solid fa-chevron-down"></i>
+          <i class="chevron-icon text-lg md:text-xl font-bold text-[#ffffff90] fa-solid fa-chevron-down"></i>
         </div>
+
+        <!-- FAQ Item 2 -->
         <div
-          class="faq-question flex flex-row transition-all ease-in-out duration-300 gap-5 items-center justify-center p-10 border-[1px] border-[#ffffff70] rounded-full w-full px-20 from-[#E5F8C6] to-[#61B998]">
-          <div class="flex items-start flex-1 flex-col gap-5">
-            <h2 class="text-2xl flex-1 font-medium">
-              What is blockchain technology?
+          class="faq-question flex flex-row gap-3 md:gap-5 items-center justify-between w-full p-5 md:px-20 md:py-10 border-[1px] border-[#ffffff70] rounded-3xl md:rounded-full cursor-pointer">
+          <div class="flex-1 flex flex-col gap-2 md:gap-5">
+            <h2 class="text-lg md:text-2xl font-medium">
+              How does Crebit ensure transaction security?
             </h2>
-            <p class="faq-answer hidden font-normal">
-              It's very simple! Register here. In your personal account,
-              create a wallet where you can store your FOX tokens. Then just
-              send any amount to the displayed address in your office.
+            <p class="faq-answer hidden font-normal text-gray-300 text-sm md:text-base">
+              The Crebit token uses blockchain technology to create a
+              decentralized and immutable record of transactions. This
+              approach minimizes fraud risks, ensuring that transactions are
+              secure and verifiable.
             </p>
           </div>
-          <i class="chevron-icon text-xl font-bold text-[#ffffff90] fa-solid fa-chevron-down"></i>
+          <i class="chevron-icon text-lg md:text-xl font-bold text-[#ffffff90] fa-solid fa-chevron-down"></i>
         </div>
+
+        <!-- FAQ Item 3 -->
         <div
-          class="faq-question flex flex-row transition-all ease-in-out duration-300 gap-5 items-center justify-center p-10 border-[1px] border-[#ffffff70] rounded-full w-full px-20 from-[#E5F8C6] to-[#61B998]">
-          <div class="flex items-start flex-1 flex-col gap-5">
-            <h2 class="text-2xl flex-1 font-medium">
-              What is blockchain technology?
+          class="faq-question flex flex-row gap-3 md:gap-5 items-center justify-between w-full p-5 md:px-20 md:py-10 border-[1px] border-[#ffffff70] rounded-3xl md:rounded-full cursor-pointer">
+          <div class="flex-1 flex flex-col gap-2 md:gap-5">
+            <h2 class="text-lg md:text-2xl font-medium">
+              What are the benefits of using Crebit?
             </h2>
-            <p class="faq-answer hidden font-normal">
-              It's very simple! Register here. In your personal account,
-              create a wallet where you can store your FOX tokens. Then just
-              send any amount to the displayed address in your office.
+            <p class="faq-answer hidden font-normal text-gray-300 text-sm md:text-base">
+              Crebit offers reduced transaction costs, faster processing
+              times, and a secure infrastructure for transactions. It’s ideal
+              for businesses seeking to streamline payment processes with
+              minimal intermediaries.
             </p>
           </div>
-          <i class="chevron-icon text-xl font-bold text-[#ffffff90] fa-solid fa-chevron-down"></i>
+          <i class="chevron-icon text-lg md:text-xl font-bold text-[#ffffff90] fa-solid fa-chevron-down"></i>
         </div>
+
+        <!-- FAQ Item 4 -->
         <div
-          class="faq-question flex flex-row transition-all ease-in-out duration-300 gap-5 items-center justify-center p-10 border-[1px] border-[#ffffff70] rounded-full w-full px-20 from-[#E5F8C6] to-[#61B998]">
-          <div class="flex items-start flex-1 flex-col gap-5">
-            <h2 class="text-2xl flex-1 font-medium">
-              What is blockchain technology?
+          class="faq-question flex flex-row gap-3 md:gap-5 items-center justify-between w-full p-5 md:px-20 md:py-10 border-[1px] border-[#ffffff70] rounded-3xl md:rounded-full cursor-pointer">
+          <div class="flex-1 flex flex-col gap-2 md:gap-5">
+            <h2 class="text-lg md:text-2xl font-medium">
+              Where can I use Crebit tokens?
             </h2>
-            <p class="faq-answer hidden font-normal">
-              It's very simple! Register here. In your personal account,
-              create a wallet where you can store your FOX tokens. Then just
-              send any amount to the displayed address in your office.
+            <p class="faq-answer hidden font-normal text-gray-300 text-sm md:text-base">
+              Crebit is accepted by multiple online platforms, and its utility
+              continues to grow across industries like e-commerce, healthcare,
+              and finance. Users can store and transfer tokens in their
+              wallets with ease.
             </p>
           </div>
-          <i class="chevron-icon text-xl font-bold text-[#ffffff90] fa-solid fa-chevron-down"></i>
+          <i class="chevron-icon text-lg md:text-xl font-bold text-[#ffffff90] fa-solid fa-chevron-down"></i>
         </div>
+
+        <!-- FAQ Item 5 -->
         <div
-          class="faq-question flex flex-row transition-all ease-in-out duration-300 gap-5 items-center justify-center p-10 border-[1px] border-[#ffffff70] rounded-full w-full px-20 from-[#E5F8C6] to-[#61B998]">
-          <div class="flex items-start flex-1 flex-col gap-5">
-            <h2 class="text-2xl flex-1 font-medium">
-              What is blockchain technology?
+          class="faq-question flex flex-row gap-3 md:gap-5 items-center justify-between w-full p-5 md:px-20 md:py-10 border-[1px] border-[#ffffff70] rounded-3xl md:rounded-full cursor-pointer">
+          <div class="flex-1 flex flex-col gap-2 md:gap-5">
+            <h2 class="text-lg md:text-2xl font-medium">
+              How can I purchase Crebit tokens?
             </h2>
-            <p class="faq-answer hidden font-normal">
-              It's very simple! Register here. In your personal account,
-              create a wallet where you can store your FOX tokens. Then just
-              send any amount to the displayed address in your office.
+            <p class="faq-answer hidden font-normal text-gray-300 text-sm md:text-base">
+              Crebit tokens are available on several major exchanges. Create a
+              wallet, and you can buy, store, and transfer tokens easily
+              within the secure blockchain ecosystem.
             </p>
           </div>
-          <i class="chevron-icon text-xl font-bold text-[#ffffff90] fa-solid fa-chevron-down"></i>
+          <i class="chevron-icon text-lg md:text-xl font-bold text-[#ffffff90] fa-solid fa-chevron-down"></i>
         </div>
       </div>
     </section>
 
-    <section class="bg-gradient-to-b h-[50vh] m-20 my-40 rounded-3xl from-[#E5F8C6] to-[#61B998] flex p-10">
-      <div class="w-2/3 flex flex-col gap-6 justify-center p-10 text-black">
-        <h3 class="text-6xl font-medium tracking-tighter">
-          Be part of the future
+    <section
+      class="bg-gradient-to-b md:h-[50vh] m-10 md:m-20 my-20 md:my-40 rounded-3xl from-[#E5F8C6] to-[#61B998] flex flex-col md:flex-row p-4 md:p-10 items-center">
+      <div class="w-full md:w-2/3 flex flex-col gap-6 justify-center p-5 md:p-10 text-black">
+        <h3 class="text-4xl md:text-6xl font-medium tracking-tighter">
+          Be part of the future with Crebit
         </h3>
         <p class="font-normal">
-          We’ve worked with over 400 companies to build blockchain <br />
-          solutions for their business.
+          Crebit is redefining possibilities with blockchain. We’ve partnered
+          with over 400 companies to implement secure and efficient blockchain
+          solutions tailored to their business needs.
         </p>
         <div>
-          <button class="bg-white px-14 py-4 rounded-full font-medium flex items-center gap-5 text-black">
-            <span>Get Started</span><span
-              class="bg-gradient-to-b from-violet-500 to-pink-500 bg-clip-text text-transparent font-bold"><i
-                class="fa-solid fa-chevron-right"></i></span>
+          <button
+            class="bg-white px-8 py-3 md:px-14 md:py-4 rounded-full font-medium flex items-center gap-3 md:gap-5 text-black">
+            <span>Get Started</span>
+            <span class="bg-gradient-to-b from-violet-500 to-pink-500 bg-clip-text text-transparent font-bold">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
           </button>
         </div>
       </div>
-      <div class="w-1/3 relative -top-32 -left-10">
-        <img src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/cta.png" alt="" />
+      <div class="w-full md:w-1/3 md:relative md:-top-32 md:-left-10 mt-10 md:mt-0 flex justify-center">
+        <img src="https://iko.themegenix.net/blockchain/wp-content/uploads/2024/04/cta.png"
+          alt="Crebit Blockchain Illustration" class="max-w-full h-auto rounded-lg shadow-lg" />
       </div>
     </section>
   </main>
 
-  <footer class="relative flex flex-row gap-20 mx-20 mb-20">
+  <footer class="relative flex flex-col lg:flex-row gap-10 lg:gap-20 mx-5 md:mx-10 lg:mx-20 mb-10 lg:mb-20">
     <div class="footer-gradient-shape"></div>
-    <div class="w-[40%] relative flex flex-col items-start gap-10">
-      <div class="flex items-center relative">
-        <img src="./images/logo1.png" alt="" class="h-16" />
-        <span class="relative -left-4 text-2xl">CRE<span class="text-sky-600">BIT</span>
-        </span>
+
+    <!-- Logo and Description Section -->
+    <div class="w-full lg:w-[40%] flex flex-col items-start gap-6 lg:gap-10">
+      <div class="flex items-center">
+        <img src="./images/logo1.png" alt="" class="h-12 md:h-16" />
+        <span class="text-xl md:text-2xl -ml-4">CRE<span class="text-sky-600">BIT</span></span>
       </div>
-      <div class="text-[#ffffff90] font-light">
+      <p class="text-[#ffffff90] font-light text-sm md:text-base">
         Crebit is a cutting-edge blockchain technology company at the
         forefront of innovation in the decentralized ledger space. Established
-        in 2024
-      </div>
-      <div class="flex gap-4 text-white">
-        <span class="h-12 w-12 rounded-full bg-slate-900 flex justify-center items-center">
-          <i class="fa-brands fa-facebook-f"></i>
-        </span>
-        <span class="h-12 w-12 rounded-full bg-slate-900 flex justify-center items-center">
+        in 2024.
+      </p>
+      <div class="flex gap-3 md:gap-4 text-white">
+        <a href="https://x.com/aicrebit?t=10_4aQZYf4PXsxC3ffnStA&s=08"
+          class="h-10 w-10 md:h-12 md:w-12 rounded-full bg-slate-900 flex justify-center items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path
               d="M9.52219 6.77491L15.4786 0H14.0671L8.89518 5.88256L4.76438 0H0L6.24657 8.89547L0 16H1.41155L6.87322 9.78779L11.2356 16H16L9.52219 6.77491ZM7.58888 8.97384L6.95597 8.08805L1.92015 1.03974H4.08821L8.15218 6.72796L8.78508 7.61374L14.0677 15.0076H11.8997L7.58888 8.97384Z"
               fill="currentColor"></path>
           </svg>
-        </span>
-        <span class="h-12 w-12 rounded-full bg-slate-900 flex justify-center items-center">
+        </a>
+        <a href="https://www.instagram.com/crebites?igsh=ZmhkdDlka3AydXdi"
+          class="h-10 w-10 md:h-12 md:w-12 rounded-full bg-slate-900 flex justify-center items-center">
           <i class="fa-brands fa-instagram"></i>
-        </span>
-        <span class="h-12 w-12 rounded-full bg-slate-900 flex justify-center items-center">
+        </a>
+        <a href="https://t.me/+WiSF1fa1cYRkYjQ1"
+          class="h-10 w-10 md:h-12 md:w-12 rounded-full bg-slate-900 flex justify-center items-center">
           <i aria-hidden="true" class="fab fa-telegram-plane"></i>
-        </span>
+        </a>
       </div>
-      <span class="absolute -right-10 w-[1px] h-full bg-[#ffffff70]"></span>
+      <span class="hidden lg:block absolute -right-5 w-[1px] h-full bg-[#ffffff70]"></span>
     </div>
-    <div class="relative w-[30%] flex flex-col gap-10 items-center font-light">
-      <div class="text-2xl">CONTACT US</div>
-      <div class="text-center flex flex-col gap-2">
-        <span class="text-[#ffffff90]">202 Helga Springs Rd, Crawford, TN 38554</span>
-        <span>Call Us: 800.275.8777</span>
-        <span>iko@company.com</span>
+
+    <!-- Contact Us Section -->
+    <div class="w-full lg:w-[30%] flex flex-col md:items-center lg:items-start gap-6 lg:gap-10 font-light">
+      <h4 class="text-lg md:text-2xl">CONTACT US</h4>
+      <div class="text-left flex flex-col gap-2 text-sm md:text-base">
+        <p class="text-[#ffffff90]"></p>
+        <p>crebittoken@gmail.com</p>
       </div>
-      <div>Copyright © 2024 IKO. All rights reserved.</div>
-      <span class="absolute -right-10 w-[1px] h-full bg-[#ffffff70]"></span>
+      <p class="text-xs md:text-sm">
+        Copyright © 2024 Crebit. All rights reserved.
+      </p>
+      <span class="hidden lg:block absolute -right-5 w-[1px] h-full bg-[#ffffff70]"></span>
     </div>
-    <div class="w-[30%] flex flex-col gap-10 font-light">
-      <div>SIGN UP FOR EMAIL UPDATES</div>
-      <div>
+
+    <!-- Email Subscription Section -->
+    <div class="w-full lg:w-[30%] flex flex-col gap-6 lg:gap-10 font-light">
+      <h4 class="text-lg md:text-xl">SIGN UP FOR EMAIL UPDATES</h4>
+      <p class="text-sm md:text-base">
         Sign up with your email address to receive <br />
-        news and updates
-      </div>
+        news and updates.
+      </p>
       <div class="relative w-full">
-        <input type="text" placeholder="Enter your email" class="p-5 w-full rounded-full bg-white text-black pe-40" />
-        <span
-          class="absolute right-1 top-1/2 -translate-y-1/2 bg-gradient-to-r from-pink-500 to-violet-500 px-8 py-4 rounded-full">Subscribe</span>
+        <input type="text" placeholder="Enter your email"
+          class="p-4 md:p-5 w-full rounded-full bg-white text-black pr-28" />
+        <button
+          class="absolute right-1 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-pink-500 to-violet-500 px-6 py-2 md:px-8 md:py-4 rounded-full text-sm md:text-base">
+          Subscribe
+        </button>
       </div>
     </div>
   </footer>
+
+  <script type="module">
+    import { CountUp } from "../node_modules/countup.js/dist/countUp.js";
+
+    var options = {
+      decimalPlaces: 0, // Number of decimal places
+      duration: 3, // Animation duration (in seconds)
+      separator: ",", // Use commas as a separator
+      prefix: "", // Any prefix, e.g., currency symbol
+      suffix: "", // Any suffix, e.g., ' users'
+      enableScrollSpy: true
+    };
+
+    var countUp = new CountUp("token-user", 500, options);
+
+    if (!countUp.error) {
+      countUp.start();
+    } else {
+      console.error(countUp.error);
+    }
+
+    var countUp2 = new CountUp("token-percent", 20, options);
+
+    if (!countUp2.error) {
+      countUp2.start();
+    } else {
+      console.error(countUp.error);
+    }
+  </script>
 
   <script>
     $(document).ready(function () {
@@ -687,20 +878,39 @@
         margin: 30,
         autoplay: true,
         autoplayTimeout: 3000,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 2
+          },
+          768: {
+            items: 3
+          },
+          1024: {
+            items: 5
+          }
+        },
       });
 
       // Initialize Owl Carousel for the testimonial carousel
       var owl2 = $(".owl-testimonial-carousel");
       owl2.owlCarousel({
-        items: 2, // Number of items displayed
+        items: 2, // Default number of items displayed
         loop: true, // Infinite looping
         margin: 30, // Space between items
         nav: false, // Disable default navigation
         dots: false, // Enable pagination dots
         autoplay: true, // Auto play carousel
         autoplayTimeout: 3000, // Delay for autoplay
-        autoplayHoverPause: true // Pause on hover
+        autoplayHoverPause: true, // Pause on hover
+        responsive: {
+          0: {
+            items: 1 // Show 1 item for screens 0px and up (mobile screens)
+          },
+          768: {
+            items: 2 // Show 2 items for screens 768px and up (tablet and larger screens)
+          }
+        }
       });
 
       // Custom Prev button functionality for testimonial carousel
@@ -713,35 +923,66 @@
         owl2.trigger("next.owl.carousel"); // Use Owl Carousel's next method
       });
 
+      $(".roadmap-slider").owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 16,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 3
+          },
+          1024: {
+            items: 5
+          }
+        },
+        nav: false,
+        dots: true
+      });
+
+
       $(".faq-question").click(function () {
-        // Toggle the corresponding answer
+        // Toggle the corresponding answer with a slide effect
         $(this).find(".faq-answer").slideToggle(300);
 
         // Close other open answers
         $(this).siblings(".faq-question").find(".faq-answer").slideUp();
 
-        // Toggle the chevron icon for the clicked question
+        // Add active classes to the clicked question
         $(this)
           .children(".chevron-icon")
           .toggleClass(
-            "fa-chevron-up fa-chevron-down p-5 bg-white rounded-full text-black transform translate-x-6"
+            "p-5 bg-white rounded-full text-black transform rotate-180 md:translate-x-6"
           );
-        $(this).addClass("text-black bg-gradient-to-b");
+        $(this).toggleClass(
+          "text-black bg-gradient-to-b from-pink-500 to-violet-500"
+        );
 
-        // Reset chevron icon for other questions
+        // Reset styling and classes for other questions
         $(this)
           .siblings(".faq-question")
           .children(".chevron-icon")
-          .toggleClass("fa-chevron-up fa-chevron-down")
           .removeClass(
-            "p-5 bg-white rounded-full text-black transform translate-x-6"
+            "p-5 bg-white rounded-full text-black transform rotate-180 md:translate-x-6"
           );
         $(this)
           .siblings(".faq-question")
-          .removeClass("text-black bg-gradient-to-b");
+          .removeClass(
+            "text-black bg-gradient-to-b from-pink-500 to-violet-500"
+          );
       });
 
       const screenHeight = $(window).height() / 2;
+
+      // On click of the hamburger menu icon
+      $("#menu-toggle").click(function () {
+        $("#mobile-menu").toggleClass("opacity-100 translate-y-0"); // Toggle visibility
+        $("#mobile-menu").toggleClass("opacity-0 translate-y-8"); // Hide when clicked again
+      });
 
       $(window).scroll(function () {
         if ($(this).scrollTop() > screenHeight) {
