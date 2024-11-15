@@ -1622,6 +1622,14 @@ video {
   top: 16rem;
 }
 
+.top-\[1rem\] {
+  top: 1rem;
+}
+
+.top-\[18rem\] {
+  top: 18rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
